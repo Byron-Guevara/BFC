@@ -1,4 +1,4 @@
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1023px) {
     header {
         padding-top: 40px;
         position: absolute;
@@ -8,9 +8,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 30px;
+            padding: 0 0px;
             &.cont-contenido {
-                width: 100%;
+                width: 86%;
             }
 
             .contenedor-logo {
@@ -57,7 +57,7 @@
             }
 
             .mobile-cont-menu {
-                position: fixed;
+                position: absolute;
                 background-color: rgba(black, 0.95);
                 mix-blend-mode: color-dodge;
                 top: 0;
@@ -65,7 +65,7 @@
                 width: 100%;
                 height: 101vh;
                 z-index: 100;
-                padding-top: 140px;
+                padding-top: 90px;
                 transition: left 400ms ease;
                 &.active {
                     left: 0;
@@ -169,7 +169,7 @@
     }
 }
 
-@media screen and (min-width: 981px) {
+@media screen and (min-width: 1024px) {
     header {
         padding-top: 40px;
         position: absolute;

@@ -8,26 +8,45 @@ $(document).ready(function () {
         nav: true,
         items: 4,
         stagePadding: 2,
-        navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"]
+        navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"], responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false,
+            },
+            768: {
+                items: 2,
+                dots: true,
+                nav: true
+            },
+            1024: {
+                items: 4,
+                dots: true,
+                nav: true
+            }
+        },
     });
 
     $('.sliderContenido').owlCarousel({
         loop: false,
         margin: 10,
-        nav: true,
-        dots: false,
-        nav: true,
         stagePadding: 2,
         navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
         responsive: {
             0: {
                 items: 1,
+                dots: true,
+                nav: false,
             },
             768: {
                 items: 2,
+                dots: true,
+                nav: true
             },
             1024: {
                 items: 4,
+                dots: true,
+                nav: true
             }
         },
     });
@@ -36,19 +55,23 @@ $(document).ready(function () {
         loop: false,
         margin: 6,
         nav: true,
-        dots: false,
-        nav: true,
         items: 7,
         navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
         responsive: {
             0: {
-                items: 2,
+                items: 1,
+                dots: true,
+                nav: false,
             },
             768: {
                 items: 4,
+                dots: true,
+                nav: false,
             },
             1024: {
                 items: 5,
+                dots: false,
+                nav: true,
             },
             1110: {
                 items: 6,
@@ -88,6 +111,7 @@ $(document).ready(function () {
         initialSlide: 1,
         preloadImages: true,
         loop: true,
+
         coverflowEffect: {
             rotate: 0,
             stretch: 100,

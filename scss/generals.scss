@@ -1,10 +1,10 @@
-@import 'fonts';
-@import 'header';
-@import 'footer';
+@import "fonts";
+@import "header";
+@import "footer";
 
 * {
     box-sizing: border-box;
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
 }
 
 html,
@@ -13,45 +13,47 @@ body {
     padding: 0;
 }
 
-img{
+img {
     display: block;
+    width: auto;
+    height: auto;
 }
 
-a{
+a {
     outline: none;
     text-decoration: none;
 }
 
-input, button{
+input,
+button {
     outline: none;
 }
 
-
-ul, ol{
+ul,
+ol {
     margin: 10px 0;
-    li{
+    li {
         font-size: 14px;
         color: #303030;
         margin: 0;
     }
-
 }
 
-p{
+p {
     font-size: 14px;
     color: #303030;
     margin: 0;
     margin-bottom: 15px;
-    em{
+    em {
         color: #008bab;
         font-style: normal;
     }
-    &:last-child{
+    &:last-child {
         margin-bottom: 0;
     }
 }
 
-h1{
+h1 {
     font-size: 34px;
     letter-spacing: 2px;
     color: #002a5b;
@@ -60,7 +62,7 @@ h1{
     text-transform: uppercase;
 }
 
-h2{
+h2 {
     font-size: 18px;
     letter-spacing: 1px;
     color: #002a5b;
@@ -69,89 +71,176 @@ h2{
     text-transform: uppercase;
 }
 
-a{
+a {
     font-size: 14px;
     color: #303030;
 }
 
-hr{
+hr {
     border: 1px solid #002a5b;
     margin: 40px 0;
 }
-
-.cont-contenido{
-    width: 82%;
-    margin: 0 auto;
-    .cont-enc{
-        text-align: center;
-        width: 90%;
+.owl-dot.active {
+    span {
+        background-color: #002a5b !important;
+    }
+}
+@media screen and (min-width: 0px) {
+    .cont-contenido {
+        width: 82%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        .cont-enc {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+    }
+
+    .cont-contenido-page {
+        width: 86%;
+        margin: 0 auto;
+        > p {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > h1 {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > h2 {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > figure {
+            max-width: 90%;
+            margin: 25px auto;
+        }
+        > ul,
+        ol {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > div {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            &.contenedor-carruselcontenido {
+                width: 100%;
+            }
+            &.contenedor-servicios {
+                width: 100%;
+            }
+            &.contenedor-servicios-mercados {
+                width: 100%;
+            }
+            &.contenedor-general-itemsdestacados {
+                width: 100%;
+            }
+            &.cont-servicios-casos {
+                width: 100%;
+            }
+            &.contenedor-general-capas {
+                width: 100%;
+            }
+        }
+    }
+
+    .wpcf7-response-output {
+        margin: 0 !important;
+        padding: 0 0 30px 0 !important;
+        border: 0 !important;
+        font-size: 12px;
+        text-align: center;
+        color: #143157;
+    }
+
+    .wpcf7-not-valid-tip {
+        font-size: 11px;
+        display: none;
     }
 }
 
-.cont-contenido-page{
-    width: 82%;
-    margin: 0 auto;
-    > p{
-        width: 76%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    > h1{
-        width: 76%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    > h2{
-        width: 76%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    > figure{
-        max-width: 60%;
-        margin: 25px auto;
-    }
-    > ul, ol{
-        width: 76%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    > div{
-        width: 76%;
-        margin-left: auto;
-        margin-right: auto;
-        &.contenedor-carruselcontenido{
+@media screen and (min-width: 1024px) {
+    .cont-contenido {
+        width: 82%;
+        margin: 0 auto;
+        .cont-enc {
+            text-align: center;
             width: 90%;
-        }
-        &.contenedor-servicios{
-            width: 90%;
-        }
-        &.contenedor-servicios-mercados{
-            width: 90%;
-        }
-        &.contenedor-general-itemsdestacados{
-            width: 90%;
-        }
-        &.cont-servicios-casos{
-            width: 100%; 
-        }
-        &.contenedor-general-capas{
-            width: 100%; 
+            margin: 0 auto;
+            margin-bottom: 50px;
         }
     }
-}
 
-.wpcf7-response-output{
-    margin: 0 !important;
-    padding: 0 0 30px 0 !important;
-    border: 0 !important;
-    font-size: 12px;
-    text-align: center;
-    color: #143157;
-}
+    .cont-contenido-page {
+        width: 82%;
+        margin: 0 auto;
+        > p {
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > h1 {
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > h2 {
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > figure {
+            max-width: 60%;
+            margin: 25px auto;
+        }
+        > ul,
+        ol {
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > div {
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+            &.contenedor-carruselcontenido {
+                width: 90%;
+            }
+            &.contenedor-servicios {
+                width: 90%;
+            }
+            &.contenedor-servicios-mercados {
+                width: 90%;
+            }
+            &.contenedor-general-itemsdestacados {
+                width: 90%;
+            }
+            &.cont-servicios-casos {
+                width: 100%;
+            }
+            &.contenedor-general-capas {
+                width: 100%;
+            }
+        }
+    }
 
-.wpcf7-not-valid-tip{
-    font-size: 11px;
-    display: none;
+    .wpcf7-response-output {
+        margin: 0 !important;
+        padding: 0 0 30px 0 !important;
+        border: 0 !important;
+        font-size: 12px;
+        text-align: center;
+        color: #143157;
+    }
+
+    .wpcf7-not-valid-tip {
+        font-size: 11px;
+        display: none;
+    }
 }
