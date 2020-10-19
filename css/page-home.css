@@ -14,6 +14,14 @@
   background-repeat: no-repeat;
 }
 
+.contenedor-general-principal .sliderPrincipal .item .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 139, 171, 0.7);
+  mix-blend-mode: multiply;
+}
+
 .contenedor-general-principal .sliderPrincipal .item img {
   width: 100%;
 }
@@ -100,8 +108,8 @@
   position: relative;
   border-top: 4px solid white;
   overflow: hidden;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contenedor-servicios-casos .cont-servicios-casos .cont-item .cont-size {
@@ -153,8 +161,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .15s;
-  transition: all .15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
   opacity: 0;
 }
 
@@ -183,8 +191,8 @@
   border: 1px solid #002a5b;
   margin: 0 auto;
   display: table;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   margin-top: 15px;
 }
 
@@ -210,8 +218,8 @@
 
 .contenedor-servicios-casos .cont-servicios-casos .owl-item {
   opacity: 0;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .contenedor-servicios-casos .cont-servicios-casos .owl-item.active {
@@ -243,8 +251,8 @@
   top: calc(50% - 10px);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contenedor-servicios-casos .cont-servicios-casos .owl-nav button.owl-prev {
@@ -257,8 +265,8 @@
 
 .contenedor-servicios-casos .cont-servicios-casos .owl-nav button img {
   width: 20px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contenedor-servicios-casos .cont-servicios-casos .owl-nav button:hover {
@@ -326,8 +334,8 @@
   background-position: center;
   cursor: pointer;
   position: relative;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contenedor-general-mercados .cont-mercados .cont-mercado .cont-size {
@@ -355,8 +363,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
   opacity: 0;
 }
@@ -385,8 +393,8 @@
   border: 1px solid white;
   margin: 0 auto;
   display: table;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   margin-top: 15px;
 }
 
@@ -419,8 +427,8 @@
 
 .contenedor-general-mercados .cont-mercados .owl-item {
   opacity: 0;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .contenedor-general-mercados .cont-mercados .owl-item.active {
@@ -452,8 +460,8 @@
   top: calc(50% - 10px);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contenedor-general-mercados .cont-mercados .owl-nav button.owl-prev {
@@ -466,8 +474,8 @@
 
 .contenedor-general-mercados .cont-mercados .owl-nav button img {
   width: 20px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contenedor-general-mercados .cont-mercados .owl-nav button:hover {
@@ -620,12 +628,12 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item img:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item p {
@@ -633,8 +641,8 @@
   text-align: center;
   color: white;
   opacity: 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: absolute;
   width: 200px;
   top: -25px;
@@ -687,7 +695,7 @@ svg path {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   transform-box: fill-box;
-  stroke-width: .5px;
+  stroke-width: 0.5px;
 }
 
 svg g {
