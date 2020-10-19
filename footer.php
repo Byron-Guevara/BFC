@@ -5,7 +5,7 @@
             </div>
             <div class="contenedor-contacto">
                 <p class="enc">contacto</p>
-            <!--
+                <!--
                 <p>
                     Av. Madrid Manzana 17 Lote 10 <br>
                     Fracc. Residencial Paraíso<br>
@@ -14,9 +14,9 @@
             -->
                 <div class="cont-telefonos">
                     <?php  if ( is_active_sidebar( 'footer-contacto' ) ) : ?>
-                        <div class="widget-area" role="complementary">
-                            <?php dynamic_sidebar( 'footer-contacto' ); ?>
-                        </div>
+                    <div class="widget-area" role="complementary">
+                        <?php dynamic_sidebar( 'footer-contacto' ); ?>
+                    </div>
                     <?php endif; ?>
                     <!--
                     <a href="tel:+52 (83) 3140 4385" target="_blank">+52 (83) 3140 4385</a>
@@ -51,9 +51,9 @@
             </div>
             <div class="contenedor-redes">
                 <?php  if ( is_active_sidebar( 'footer-redes-sociales' ) ) : ?>
-                    <div class="widget-area" role="complementary">
-                        <?php dynamic_sidebar( 'footer-redes-sociales' ); ?>
-                    </div>
+                <div class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'footer-redes-sociales' ); ?>
+                </div>
                 <?php endif; ?>
                 <!--
                 <a href="#" target="_blanck">
@@ -69,6 +69,6 @@
             </div>
         </div>
     </footer>
-
+    <?php wp_footer(); ?>
     </body>
-</html>
+    </html>
