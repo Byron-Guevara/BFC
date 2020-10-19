@@ -8,7 +8,7 @@
             <!--
                 <p>
                     Av. Madrid Manzana 17 Lote 10 <br>
-                    Fracc. Residencial Paraíso <br>
+                    Fracc. Residencial Paraíso<br>
                     Paraíso Tabasco, C.P. 86605
                 </p>
             -->
