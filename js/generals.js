@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+    alert("skjjs");
+
     $('.burguer').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();

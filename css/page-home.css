@@ -777,8 +777,24 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
     font-size: 35px;
     line-height: 35px;
   }
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info p br {
+    display: none;
+  }
+  .contenedor-general-clientes .cont-clientes {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .contenedor-general-clientes .cont-clientes .cont-cliente {
+    width: calc(100% / 2);
+  }
+  .contenedor-general-clientes .cont-clientes .cont-cliente img {
+    height: 40px;
+    width: auto;
+  }
   .contenedor-general-mapa .map-container {
     padding: 50px 0px;
+    overflow: hidden;
   }
   .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item img {
     width: 7px;

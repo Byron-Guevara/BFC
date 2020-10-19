@@ -670,7 +670,26 @@ svg {
                             font-size: 35px;
                             line-height: 35px;
                         }
+                        p{
+                            br{
+                                display: none;
+                            }
+                        }
                     }
+                }
+            }
+        }
+    }
+
+    .contenedor-general-clientes{ 
+        .cont-clientes{
+            flex-wrap: wrap;
+            width: 100%;
+            .cont-cliente{
+                width: calc(100% / 2);
+                img{
+                    height: 40px;
+                    width: auto;
                 }
             }
         }
@@ -679,6 +698,7 @@ svg {
     .contenedor-general-mapa{
         .map-container {
             padding: 50px 0px;
+            overflow: hidden;
             .cont-contenido{
                 .contenedor-mapa{
                     .contenedor-item{
