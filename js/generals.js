@@ -1,83 +1,101 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
+
+    $('.burguer').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $(this).toggleClass('active');
+        $('.mobile-cont-menu').toggleClass('active');
+    });
+
+    let button = '<button class="submenu-button"><div>+</div></button>';
+    $('.menu-item-has-children').append(button);
+    $('.submenu-button').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).toggleClass('active');
+        $(this).siblings('.sub-menu').slideToggle(500, "linear");
+    });
+
 
     $('.sliderServicios').owlCarousel({
-        loop:false,
-        margin:10,
-        nav:true,
+        loop: false,
+        margin: 10,
+        nav: true,
         dots: false,
         nav: true,
-        items : 4,
+        items: 4,
         stagePadding: 2,
-        navText : ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>","<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"]
+        navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"]
     });
 
     $('.sliderContenido').owlCarousel({
-        loop:false,
-        margin:10,
-        nav:true,
+        loop: false,
+        margin: 10,
+        nav: true,
         dots: false,
         nav: true,
         stagePadding: 2,
-        navText : ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>","<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
-        responsive : {
-            0 : {
-                items : 1,
+        navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
+        responsive: {
+            0: {
+                items: 1,
             },
-            768 : {
-                items : 2,
+            768: {
+                items: 2,
             },
-            1024 : {
-                items : 4,
+            1024: {
+                items: 4,
             }
         },
     });
 
     $('.slider-servicios-mercados').owlCarousel({
-        loop:false,
-        margin:6,
-        nav:true,
+        loop: false,
+        margin: 6,
+        nav: true,
         dots: false,
         nav: true,
-        items : 7,
-        navText : ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>","<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
-        responsive : {
-            0 : {
-                items : 2,
+        items: 7,
+        navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
+        responsive: {
+            0: {
+                items: 2,
             },
-            768 : {
-                items : 4,
+            768: {
+                items: 4,
             },
-            1024 : {
-                items : 5,
+            1024: {
+                items: 5,
             },
-            1110 : {
-                items : 6,
+            1110: {
+                items: 6,
             },
-            1280 : {
-                items : 7,
+            1280: {
+                items: 7,
             }
         }
     });
 
     $('.sliderCasos').owlCarousel({
-        loop:false,
-        margin:10,
-        nav:true,
+        loop: false,
+        margin: 10,
+        nav: true,
         dots: true,
         nav: true,
         stagePadding: 50,
-        items : 3,
-        navText : ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>","<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
-        responsive : {
-            0 : {
-                items : 1,
+        items: 3,
+        navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
+        responsive: {
+            0: {
+                items: 1,
             },
-            768 : {
-                items : 2,
+            768: {
+                items: 2,
             },
-            1024 : {
-                items : 3,
+            1024: {
+                items: 3,
             }
         }
     });
@@ -102,11 +120,11 @@ $(document).ready(function(){
         },
         breakpoints: {
             320: {
-            slidesPerView: 1,
+                slidesPerView: 1,
             },
 
             768: {
-            slidesPerView: 'auto',
+                slidesPerView: 'auto',
             }
         }
     });
@@ -125,12 +143,12 @@ $(document).ready(function(){
                     $(this).addClass("active");
                 }
             });
-        });    
+        });
     });
     */
 
-    $(".contenedor-general-capas .contenedor-items-capas .cont-item-capa").each(function(index){
-        $(this).click(function(){
+    $(".contenedor-general-capas .contenedor-items-capas .cont-item-capa").each(function (index) {
+        $(this).click(function () {
             $(".contenedor-general-capas .contenedor-items-capas .cont-item-capa").removeClass("active");
             $(this).addClass("active");
             $(".contenedor-general-capas .contenedor-items-contenido .cont-item-contenido").removeClass("active");

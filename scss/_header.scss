@@ -12,6 +12,7 @@
             &.cont-contenido {
                 width: 100%;
             }
+
             .contenedor-logo {
                 width: 100%;
                 display: flex;
@@ -41,7 +42,7 @@
                             transition: transform 400ms ease;
                         }
 
-                        &:hover {
+                        &.active {
                             span {
                                 &:nth-child(1) {
                                     transform: rotateZ(45deg) translate3d(3px, 3px, 0);
@@ -60,11 +61,15 @@
                 background-color: rgba(black, 0.8);
                 mix-blend-mode: color-dodge;
                 top: 0;
-                left: 0;
+                left: -100%;
                 width: 100%;
-                height: 100vh;
+                height: 101vh;
                 z-index: 100;
                 padding-top: 140px;
+                transition: left 400ms ease;
+                &.active {
+                    left: 0;
+                }
                 .contenedor-menu {
                     display: block;
                     .cont-languaje {
@@ -90,7 +95,7 @@
                             a {
                                 color: white;
                                 text-transform: uppercase;
-                                font-size: 13px;
+                                font-size: 18px;
                             }
                             &.current-menu-parent,
                             &.current-menu-item {
@@ -98,20 +103,48 @@
                                     font-weight: bold;
                                 }
                             }
+                            &.menu-item-has-children {
+                                position: relative;
+                                .submenu-button {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    background: #008bab;
+                                    border: 0;
+                                    width: 20px;
+                                    height: 20px;
+                                    padding: 0;
+                                    div {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: white;
+                                        font-size: 15px;
+                                        transition: transform 400ms ease;
+                                    }
+
+                                    &.active {
+                                        div {
+                                            transform: rotateZ(45deg);
+                                        }
+                                    }
+                                }
+                            }
                             ul.sub-menu {
+                                display: none;
                                 background: #008bab;
-                                padding: 10px;
+                                padding: 0 10px !important;
                                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
                                     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-                                transition: all 0.3s;
+
                                 li {
                                     margin: 0;
-                                    padding: 0;
+
                                     line-height: 14px;
                                     margin-bottom: 5px;
-                                    padding: 5px;
+                                    padding: 10px 5px;
                                     a {
-                                        font-size: 10px;
+                                        font-size: 14px;
                                         transition: all 0.3s;
                                         &:hover {
                                             opacity: 0.5;
@@ -147,9 +180,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 50px;
-            &.cont-contenido {
-                width: 100%;
-            }
             .contenedor-logo {
                 img {
                     width: 153px;
@@ -182,6 +212,9 @@
                             > a {
                                 font-weight: bold;
                             }
+                        }
+                        .submenu-button {
+                            display: none;
                         }
                         ul.sub-menu {
                             position: absolute;
