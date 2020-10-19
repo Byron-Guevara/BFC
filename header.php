@@ -24,15 +24,7 @@
                         )
                     );
                 ?>
-                <!--
-                <ul>
-                    <li> <a href="#">Nosotros</a> </li>
-                    <li> <a href="#">Servicios</a> </li>
-                    <li> <a href="#">Mercados</a> </li>
-                    <li> <a href="#">Capacitación</a> </li>
-                    <li> <a href="#">Contacto</a> </li>
-                </ul>
-                -->
+
                 <div class="cont-languaje">
                     <span class="active">ES</span><span class="divider">|</span> <span>EN</span>
                 </div>
