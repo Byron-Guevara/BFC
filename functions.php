@@ -9,7 +9,7 @@ function register_bfc_menus(){
     register_nav_menus( array(
         'Header'   => __( 'Header Menu', 'BFC' ),
         'Footer'   => __( 'Footer Menu', 'BFC' ),
-        ) 
+        )
     );
 }
 add_action('init', 'register_bfc_menus');
@@ -36,6 +36,8 @@ function add_theme_scripts() {
         wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array('jquery'), 'https://unpkg.com/swiper/swiper-bundle.min.js', false);
         wp_enqueue_script('generals', get_template_directory_uri().'/js/generals.js', array('jquery'),filemtime( get_stylesheet_directory() . '/js/generals.js' ), false);
     }
+
+    wp_enqueue_script('menu', get_template_directory_uri().'/js/menu.js', array('jquery'),filemtime( get_stylesheet_directory() . '/js/menu.js' ), false);
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
@@ -58,7 +60,7 @@ add_action( 'widgets_init', 'wpb_widgets_init' );
 
 add_action( 'init', 'bfc_post_type_servicios' );
 function bfc_post_type_servicios() {
- 
+
   $labels = array(
     'name'               => __( 'Servicios' ),
     'singular_name'      => __( 'Servicios' ),
@@ -72,7 +74,7 @@ function bfc_post_type_servicios() {
     'not_found' => 'No se han encontrado servicios',
 	'not_found_in_trash' => 'No se han encontrado servicios en la papelera'
   );
- 
+
   $args = array(
     'labels'            => $labels,
     'description'       => 'Información especifica de cada servicio',
@@ -92,7 +94,7 @@ function bfc_post_type_servicios() {
 
 add_action( 'init', 'bfc_post_type_mercados' );
 function bfc_post_type_mercados() {
- 
+
   $labels = array(
     'name'               => __( 'Mercados' ),
     'singular_name'      => __( 'Mercados' ),
@@ -106,7 +108,7 @@ function bfc_post_type_mercados() {
     'not_found' => 'No se han encontrado mercados',
 	'not_found_in_trash' => 'No se han encontrado mercados en la papelera'
   );
- 
+
   $args = array(
     'labels'            => $labels,
     'description'       => 'Información especifica de cada mercado',
@@ -126,7 +128,7 @@ function bfc_post_type_mercados() {
 
 add_action( 'init', 'bfc_post_type_casos' );
 function bfc_post_type_casos() {
- 
+
   $labels = array(
     'name'               => __( 'Casos de Éxito' ),
     'singular_name'      => __( 'Casos de Éxito' ),
@@ -140,7 +142,7 @@ function bfc_post_type_casos() {
     'not_found' => 'No se han encontrado casos de éxito',
 	'not_found_in_trash' => 'No se han encontrado casos de éxito en la papelera'
   );
- 
+
   $args = array(
     'labels'            => $labels,
     'description'       => 'Información especifica de cada caso de éxito',

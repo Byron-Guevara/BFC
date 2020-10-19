@@ -102,7 +102,7 @@
   }
   header .contenedor-header .mobile-cont-menu {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.95);
     mix-blend-mode: color-dodge;
     top: 0;
     left: -100%;
