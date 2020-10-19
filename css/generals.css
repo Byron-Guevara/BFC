@@ -92,11 +92,11 @@
     transition: transform 400ms ease;
     transition: transform 400ms ease, -webkit-transform 400ms ease;
   }
-  header .contenedor-header .contenedor-logo .cont-burguer .burguer:hover span:nth-child(1) {
+  header .contenedor-header .contenedor-logo .cont-burguer .burguer.active span:nth-child(1) {
     -webkit-transform: rotateZ(45deg) translate3d(3px, 3px, 0);
             transform: rotateZ(45deg) translate3d(3px, 3px, 0);
   }
-  header .contenedor-header .contenedor-logo .cont-burguer .burguer:hover span:nth-child(2) {
+  header .contenedor-header .contenedor-logo .cont-burguer .burguer.active span:nth-child(2) {
     -webkit-transform: rotateZ(-45deg) translate3d(4px, -4px, 0);
             transform: rotateZ(-45deg) translate3d(4px, -4px, 0);
   }
@@ -105,11 +105,16 @@
     background-color: rgba(0, 0, 0, 0.8);
     mix-blend-mode: color-dodge;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
-    height: 100vh;
+    height: 101vh;
     z-index: 100;
     padding-top: 140px;
+    -webkit-transition: left 400ms ease;
+    transition: left 400ms ease;
+  }
+  header .contenedor-header .mobile-cont-menu.active {
+    left: 0;
   }
   header .contenedor-header .mobile-cont-menu .contenedor-menu {
     display: block;
@@ -139,28 +144,60 @@
   header .contenedor-header .mobile-cont-menu .contenedor-menu ul li a {
     color: white;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 18px;
   }
   header .contenedor-header .mobile-cont-menu .contenedor-menu ul li.current-menu-parent > a, header .contenedor-header .mobile-cont-menu .contenedor-menu ul li.current-menu-item > a {
     font-weight: bold;
   }
-  header .contenedor-header .mobile-cont-menu .contenedor-menu ul li ul.sub-menu {
+  header .contenedor-header .mobile-cont-menu .contenedor-menu ul li.menu-item-has-children {
+    position: relative;
+  }
+  header .contenedor-header .mobile-cont-menu .contenedor-menu ul li.menu-item-has-children .submenu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
     background: #008bab;
-    padding: 10px;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+  }
+  header .contenedor-header .mobile-cont-menu .contenedor-menu ul li.menu-item-has-children .submenu-button div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    font-size: 15px;
+    -webkit-transition: -webkit-transform 400ms ease;
+    transition: -webkit-transform 400ms ease;
+    transition: transform 400ms ease;
+    transition: transform 400ms ease, -webkit-transform 400ms ease;
+  }
+  header .contenedor-header .mobile-cont-menu .contenedor-menu ul li.menu-item-has-children .submenu-button.active div {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  header .contenedor-header .mobile-cont-menu .contenedor-menu ul li ul.sub-menu {
+    display: none;
+    background: #008bab;
+    padding: 0 10px !important;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
   }
   header .contenedor-header .mobile-cont-menu .contenedor-menu ul li ul.sub-menu li {
     margin: 0;
-    padding: 0;
     line-height: 14px;
     margin-bottom: 5px;
-    padding: 5px;
+    padding: 10px 5px;
   }
   header .contenedor-header .mobile-cont-menu .contenedor-menu ul li ul.sub-menu li a {
-    font-size: 10px;
+    font-size: 14px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
@@ -196,9 +233,6 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 0 50px;
-  }
-  header .contenedor-header.cont-contenido {
-    width: 100%;
   }
   header .contenedor-header .contenedor-logo img {
     width: 153px;
@@ -237,6 +271,9 @@
   }
   header .contenedor-header .contenedor-menu ul li.current-menu-parent > a, header .contenedor-header .contenedor-menu ul li.current-menu-item > a {
     font-weight: bold;
+  }
+  header .contenedor-header .contenedor-menu ul li .submenu-button {
+    display: none;
   }
   header .contenedor-header .contenedor-menu ul li ul.sub-menu {
     position: absolute;
