@@ -210,6 +210,17 @@ function my_acf_init_block_types() {
         'keywords'          => array( 'items-destacados', 'quote' ),
     ));
 
+    // Items Destacados de Contacto.
+    acf_register_block_type(array(
+      'name'              => 'contacto',
+      'title'             => __('Contacto'),
+      'description'       => __('Contacto.'),
+      'render_template'   => 'blocks/contacto.php',
+      'category'          => 'ap-blocks',
+      'icon'              => 'images-alt',
+      'keywords'          => array( 'contacto', 'quote' ),
+    ));
+
     }
 }
 
