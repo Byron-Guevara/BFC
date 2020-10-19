@@ -638,27 +638,27 @@
 }
 
 .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-yucatan {
-  right: 6%;
-  bottom: 34%;
+  right: 8%;
+  bottom: 32%;
 }
 
 .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-campeche {
-  right: 13%;
-  bottom: 23%;
+  right: 15%;
+  bottom: 22%;
 }
 
 .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-tabasco {
-  right: 20.5%;
-  bottom: 19%;
-}
-
-.contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-tabasco2 {
-  right: 17.7%;
+  right: 19.5%;
   bottom: 20%;
 }
 
+.contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-tabasco2 {
+  right: 18%;
+  bottom: 17.5%;
+}
+
 .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-monterrey {
-  right: 40.5%;
+  right: 41.5%;
   bottom: 59%;
 }
 
@@ -672,6 +672,10 @@
 
 .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.active p {
   opacity: 1;
+}
+
+.contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.active.contenedor-campeche p {
+  top: -45px;
 }
 
 svg path {

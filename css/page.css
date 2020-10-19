@@ -918,7 +918,6 @@ header .cont-contenido {
   border: 2px solid #002a5b;
   color: white;
   padding: 10px 32px;
-  display: block;
   cursor: pointer;
   -webkit-transition: all .3s;
   transition: all .3s;

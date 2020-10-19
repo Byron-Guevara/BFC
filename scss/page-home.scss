@@ -501,23 +501,23 @@
                         top: -25px;
                     }
                     &.contenedor-yucatan{
-                        right: 6%;
-                        bottom: 34%;
+                        right: 8%;
+                        bottom: 32%;
                     }
                     &.contenedor-campeche{
-                        right: 13%;
-                        bottom: 23%;
+                        right: 15%;
+                        bottom: 22%;
                     }
                     &.contenedor-tabasco{
-                        right: 20.5%;
-                        bottom: 19%;
-                    }
-                    &.contenedor-tabasco2{
-                        right: 17.7%;
+                        right: 19.5%;
                         bottom: 20%;
                     }
+                    &.contenedor-tabasco2{
+                        right: 18%;
+                        bottom: 17.5%;
+                    }
                     &.contenedor-monterrey{
-                        right: 40.5%;
+                        right: 41.5%;
                         bottom: 59%;
                     }
 
@@ -530,6 +530,11 @@
                         }
                         p{
                             opacity: 1;
+                        }
+                        &.contenedor-campeche{
+                            p{
+                                top: -45px;
+                            }
                         }
                     }
                 }
