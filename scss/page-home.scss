@@ -678,9 +678,16 @@ svg {
 
     .contenedor-general-mapa{
         .map-container {
-            background-position: center;
             padding: 50px 0px;
-            position: relative;
+            .cont-contenido{
+                .contenedor-mapa{
+                    .contenedor-item{
+                        img{
+                            width: 7px;
+                        }
+                    }
+                }
+            }
         }
     }
 

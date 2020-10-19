@@ -778,8 +778,9 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
     line-height: 35px;
   }
   .contenedor-general-mapa .map-container {
-    background-position: center;
     padding: 50px 0px;
-    position: relative;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item img {
+    width: 7px;
   }
 }
