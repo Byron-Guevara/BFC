@@ -16,4 +16,10 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $(this).siblings('.sub-menu').slideToggle(500, "linear");
     });
+
+
+    $('a[href="#"]').on('click', function (e) {
+        e.preventDefault();
+        return false;
+    });
 });
