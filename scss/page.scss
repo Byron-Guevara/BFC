@@ -116,6 +116,28 @@
                     }
                 }
             }
+            .owl-dots{
+                button{
+                    span{
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 3px;
+                        border-radius: 100%;
+                        background: transparent;
+                        border: 1px solid #008bab;
+                    }
+                    &:hover{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                    &.active{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -268,6 +290,28 @@
                         background: #adbbca;
                         img {
                             transform: scale(0.6);
+                        }
+                    }
+                }
+            }
+            .owl-dots{
+                button{
+                    span{
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 3px;
+                        border-radius: 100%;
+                        background: transparent;
+                        border: 1px solid #008bab;
+                    }
+                    &:hover{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                    &.active{
+                        span{
+                            background: #008bab;
                         }
                     }
                 }
@@ -867,6 +911,28 @@
                     }
                 }
             }
+            .owl-dots{
+                button{
+                    span{
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 3px;
+                        border-radius: 100%;
+                        background: transparent;
+                        border: 1px solid #008bab;
+                    }
+                    &:hover{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                    &.active{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1019,6 +1085,28 @@
                         background: #adbbca;
                         img {
                             transform: scale(0.6);
+                        }
+                    }
+                }
+            }
+            .owl-dots{
+                button{
+                    span{
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 3px;
+                        border-radius: 100%;
+                        background: transparent;
+                        border: 1px solid #008bab;
+                    }
+                    &:hover{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                    &.active{
+                        span{
+                            background: #008bab;
                         }
                     }
                 }
@@ -1488,4 +1576,56 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 767px){
+
+    .contenedor-general-capas{ 
+        .contenedor-items-capas{ 
+            .cont-item-capa{
+                flex: 1 0 100%;
+            }
+        }
+        .contenedor-items-contenido{ 
+            .cont-item-contenido{ 
+                .contenedor-item-columnado{
+                    flex-direction: column;
+                    .cont-item-columnado{
+                        width: 100%;
+                        &:first-child{
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .contenedor-general-contacto{
+        flex-direction: column;
+        .contenedor-direccion{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+        .contenedor-contacto{
+            width: 100%;
+        }
+        .contenedor-contacto{ 
+            .form{ 
+                .form-control{
+                    &.half{
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }

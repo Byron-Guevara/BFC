@@ -780,6 +780,14 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
   .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info p br {
     display: none;
   }
+  .contenedor-servicios-casos .cont-servicios-casos .cont-item:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .contenedor-general-mercados .cont-mercados .cont-mercado:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   .contenedor-general-clientes .cont-clientes {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
