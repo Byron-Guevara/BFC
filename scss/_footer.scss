@@ -98,3 +98,34 @@ footer{
         }
     }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    footer{
+        .contenedor-footer{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    footer{
+        .contenedor-footer{
+            flex-direction: column;
+            .contenedor-contacto{
+                margin: 20px 0;
+                text-align: center;
+                a{
+                    display: block;
+                }
+                span{
+                    display: none;
+                }
+            }
+            .contenedor-menu{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
