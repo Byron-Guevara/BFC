@@ -807,4 +807,30 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
   .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item img {
     width: 7px;
   }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-yucatan {
+    right: 5.5%;
+    bottom: 33%;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-campeche {
+    right: 13%;
+    bottom: 24%;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-tabasco {
+    right: 18.5%;
+    bottom: 22%;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-tabasco2 {
+    right: 16%;
+    bottom: 19.5%;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.contenedor-monterrey {
+    right: 39%;
+    bottom: 59%;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.active img {
+    width: 15px;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.active.contenedor-yucatan p {
+    left: -120px;
+  }
 }
