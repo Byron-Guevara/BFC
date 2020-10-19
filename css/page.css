@@ -819,6 +819,9 @@ header .cont-contenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px 0 60px;
 }
 
@@ -905,7 +908,7 @@ header .cont-contenido {
 }
 
 .contenedor-general-contacto .contenedor-contacto .form .form-control input.wpcf7-not-valid {
-  border-bottom: 1px solid red;
+  border: 1px solid red;
 }
 
 .contenedor-general-contacto .contenedor-contacto .form .form-control input[type="submit"] {
@@ -915,7 +918,6 @@ header .cont-contenido {
   border: 2px solid #002a5b;
   color: white;
   padding: 10px 32px;
-  display: block;
   cursor: pointer;
   -webkit-transition: all .3s;
   transition: all .3s;

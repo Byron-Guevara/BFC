@@ -8,7 +8,7 @@
 
     <div class="contenedor-general-principal">
         <div class="sliderPrincipal owl-carousel owl-theme">
-            <div class="item">
+            <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>);">
                 <img src="<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>" alt="">
                 <div class="contenedor-info cont-contenido">
                     <div class="cont-info">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>);">
                 <img src="<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>" alt="">
                 <div class="contenedor-info cont-contenido">
                     <div class="cont-info">
@@ -288,19 +288,19 @@
                 <div class="contenedor-mapa">
 
                     <div class="contenedor-yucatan contenedor-item">
-                        <p>Yucatan</p>
+                        <p>Mérida, Yucatán </p>
                         <img src="<?php echo get_template_directory_uri().'/img/item-state.png';?>" alt="">
                     </div>
                     <div class="contenedor-campeche contenedor-item">
-                        <p>Campeche</p>
+                        <p>Ciudad del Cármen, Campeche </p>
                         <img src="<?php echo get_template_directory_uri().'/img/item-state.png';?>" alt="">
                     </div>
                     <div class="contenedor-tabasco contenedor-item">
-                        <p>Tabasco</p>
+                        <p>Villahermosa, Tabasco </p>
                         <img src="<?php echo get_template_directory_uri().'/img/item-state.png';?>" alt="">
                     </div>
                     <div class="contenedor-tabasco2 contenedor-item">
-                        <p>Tabasco2</p>
+                        <p>Paraiso, Tabasco </p>
                         <img src="<?php echo get_template_directory_uri().'/img/item-state.png';?>" alt="">
                     </div>
                     <div class="contenedor-monterrey contenedor-item">

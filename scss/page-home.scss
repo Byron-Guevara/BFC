@@ -5,6 +5,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             img{
                 width: 100%;    
             }
@@ -501,23 +504,23 @@
                         top: -25px;
                     }
                     &.contenedor-yucatan{
-                        right: 6%;
-                        bottom: 34%;
+                        right: 8%;
+                        bottom: 32%;
                     }
                     &.contenedor-campeche{
-                        right: 13%;
-                        bottom: 23%;
+                        right: 15%;
+                        bottom: 22%;
                     }
                     &.contenedor-tabasco{
-                        right: 20.5%;
-                        bottom: 19%;
-                    }
-                    &.contenedor-tabasco2{
-                        right: 17.7%;
+                        right: 19.5%;
                         bottom: 20%;
                     }
+                    &.contenedor-tabasco2{
+                        right: 18%;
+                        bottom: 17.5%;
+                    }
                     &.contenedor-monterrey{
-                        right: 40.5%;
+                        right: 41.5%;
                         bottom: 59%;
                     }
 
@@ -530,6 +533,11 @@
                         }
                         p{
                             opacity: 1;
+                        }
+                        &.contenedor-campeche{
+                            p{
+                                top: -45px;
+                            }
                         }
                     }
                 }
@@ -611,3 +619,69 @@ svg {
     }
 }
 */
+
+@media screen and (min-width: 768px){
+
+    .contenedor-general-principal{
+        .sliderPrincipal{
+            .item{
+                background-image: unset !important;
+            }
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .contenedor-general-principal{
+        .sliderPrincipal{
+            .item{
+                .contenedor-info{
+                    .cont-info{
+                        h1{
+                            font-size: 45px;
+                            line-height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 767px){
+
+    .contenedor-general-principal{
+        .sliderPrincipal{
+            .item{
+                height: 500px;
+                img{
+                    visibility: hidden;
+                }
+                .contenedor-info{
+                    padding: 0;
+                    .cont-info{
+                        h1{
+                            font-size: 35px;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-general-mapa{
+        .map-container {
+            background-position: center;
+            padding: 50px 0px;
+            position: relative;
+        }
+    }
+
+}
