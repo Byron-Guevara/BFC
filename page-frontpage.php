@@ -8,7 +8,7 @@
 
     <div class="contenedor-general-principal">
         <div class="sliderPrincipal owl-carousel owl-theme">
-            <div class="item">
+            <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>);">
                 <img src="<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>" alt="">
                 <div class="contenedor-info cont-contenido">
                     <div class="cont-info">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>);">
                 <img src="<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>" alt="">
                 <div class="contenedor-info cont-contenido">
                     <div class="cont-info">

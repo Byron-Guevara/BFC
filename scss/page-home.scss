@@ -5,6 +5,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             img{
                 width: 100%;    
             }
@@ -616,3 +619,69 @@ svg {
     }
 }
 */
+
+@media screen and (min-width: 768px){
+
+    .contenedor-general-principal{
+        .sliderPrincipal{
+            .item{
+                background-image: unset !important;
+            }
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .contenedor-general-principal{
+        .sliderPrincipal{
+            .item{
+                .contenedor-info{
+                    .cont-info{
+                        h1{
+                            font-size: 45px;
+                            line-height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 767px){
+
+    .contenedor-general-principal{
+        .sliderPrincipal{
+            .item{
+                height: 500px;
+                img{
+                    visibility: hidden;
+                }
+                .contenedor-info{
+                    padding: 0;
+                    .cont-info{
+                        h1{
+                            font-size: 35px;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-general-mapa{
+        .map-container {
+            background-position: center;
+            padding: 50px 0px;
+            position: relative;
+        }
+    }
+
+}
