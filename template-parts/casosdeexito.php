@@ -21,8 +21,8 @@
                     <?php the_title(); ?>
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Facilis consequuntur a officia assumenda odit harum ipsum dolor reprehenderit. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis consequuntur a officia assumenda odit harum ipsum dolor reprehenderit.
                 </p>
                 <a href="<?php the_permalink(); ?>">Ver más</a>
             </div>

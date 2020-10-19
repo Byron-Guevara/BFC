@@ -158,8 +158,12 @@ function bfc_post_type_casos() {
 
   register_post_type( 'casosdeexito', $args);
 
-}
 
+}
+function reg_cat() {
+  register_taxonomy_for_object_type('category','casosdeexito');
+}
+add_action('init', 'reg_cat');
 
 
 add_action('acf/init', 'my_acf_init_block_types');
