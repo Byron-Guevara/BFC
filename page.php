@@ -10,9 +10,16 @@
         echo $content;
         ?> 
     </div>
-    <div class="contenedor-contactaexperto">
-        <a href="#">Contacta a un experto</a>
-    </div>
+    <?php 
+    if($post->ID != 235)
+    {
+    ?>
+        <div class="contenedor-contactaexperto">
+            <a href="<?php echo get_home_url(); ?>/contacto/">Contacta a un experto</a>
+        </div>
+    <?php 
+    }
+    ?>
 </div>
 
 <?php get_footer(); ?>

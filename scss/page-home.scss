@@ -681,6 +681,26 @@ svg {
         }
     }
 
+    .contenedor-servicios-casos{ 
+        .cont-servicios-casos{ 
+            .cont-item{
+                &:hover{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .contenedor-general-mercados{ 
+        .cont-mercados {
+            .cont-mercado{
+                &:hover{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
     .contenedor-general-clientes{ 
         .cont-clientes{
             flex-wrap: wrap;

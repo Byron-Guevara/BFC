@@ -399,6 +399,8 @@
             responsive : {
                 0 : {
                     items : 1,
+                    nav: false,
+                    stagePadding: 0,
                 },
                 768 : {
                     items : 2,
@@ -420,6 +422,8 @@
             responsive : {
                 0 : {
                     items : 1,
+                    nav: false,
+                    stagePadding: 0,
                 },
                 768 : {
                     items : 3,
@@ -445,6 +449,8 @@
             responsive : {
                 0 : {
                     items : 1,
+                    nav: false,
+                    stagePadding: 0,
                 },
                 768 : {
                     items : 2,

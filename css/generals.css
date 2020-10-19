@@ -586,10 +586,6 @@ hr {
   margin: 40px 0;
 }
 
-.owl-dot.active span {
-  background-color: #002a5b !important;
-}
-
 @media screen and (min-width: 0px) {
   .cont-contenido {
     width: 82%;

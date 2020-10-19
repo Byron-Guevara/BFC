@@ -84,7 +84,7 @@
         <?php endif; ?>
         
         <div class="contenedor-contactaexperto">
-            <a href="#">Contacta a un experto</a>
+            <a href="<?php echo get_home_url(); ?>/contacto/">Contacta a un experto</a>
         </div>
         
     </div>
