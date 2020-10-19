@@ -15,7 +15,34 @@
                 <a href="<?php echo get_home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri().'/img/logo-BFC.png';?>" alt="">
                 </a>
+
+                <div class="cont-burguer">
+                    <div class="burguer">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
+
+            <!-- Mobile -->
+            <div class="mobile-cont-menu">
+                <div class="contenedor-menu">
+                    <div class="cont-languaje">
+                        <a href="#"><span class="active">ES</span></a><span class="divider">|</span><a href="#"><span>EN</span></a>
+                    </div>
+
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'Header'
+                        )
+                    );
+                    ?>
+
+                </div>
+            </div>
+            <!-- Mobile -->
+
             <div class="contenedor-menu">
                 <?php
                     wp_nav_menu(
@@ -26,7 +53,7 @@
                 ?>
 
                 <div class="cont-languaje">
-                    <span class="active">ES</span><span class="divider">|</span> <span>EN</span>
+                    <a href="#"><span class="active">ES</span></a><span class="divider">|</span><a href="#"><span>EN</span></a>
                 </div>
             </div>
         </div>
