@@ -1,0 +1,144 @@
+@import 'fonts';
+@import 'header';
+@import 'footer';
+
+* {
+    box-sizing: border-box;
+    font-family: 'OpenSans';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+input, button{
+    outline: none;
+}
+
+
+ul, ol{
+    margin: 10px 0;
+    li{
+        font-size: 14px;
+        color: #303030;
+        margin: 0;
+    }
+
+}
+
+p{
+    font-size: 14px;
+    color: #303030;
+    margin: 0;
+    margin-bottom: 15px;
+    em{
+        color: #008bab;
+        font-style: normal;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+h1{
+    font-size: 34px;
+    letter-spacing: 2px;
+    color: #002a5b;
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #002a5b;
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+a{
+    font-size: 14px;
+    color: #303030;
+}
+
+hr{
+    border: 1px solid #002a5b;
+    margin: 40px 0;
+}
+
+.cont-contenido{
+    width: 82%;
+    margin: 0 auto;
+    min-width: 900px;
+    .cont-enc{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+.cont-contenido-page{
+    width: 82%;
+    margin: 0 auto;
+    > p{
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    > h1{
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    > h2{
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    > figure{
+        max-width: 60%;
+        margin: 25px auto;
+    }
+    > ul, ol{
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    > div{
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+        &.contenedor-carruselcontenido{
+            width: 90%;
+        }
+        &.contenedor-servicios{
+            width: 90%;
+        }
+        &.contenedor-servicios-mercados{
+            width: 90%;
+        }
+        &.contenedor-general-itemsdestacados{
+            width: 90%;
+        }
+        &.cont-servicios-casos{
+            width: 100%; 
+        }
+        &.contenedor-general-capas{
+            width: 100%; 
+        }
+    }
+}

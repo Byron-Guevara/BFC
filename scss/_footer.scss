@@ -1,0 +1,100 @@
+footer{
+    padding: 45px 0;
+    background: #1f1f1f;
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .contenedor-logo{
+            img{
+                width: 180px;
+            }
+        }
+        .contenedor-contacto{
+            p{
+                color: white;
+                &.enc{
+                    color: #c1272c;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                }
+            }
+            .cont-telefonos{
+                .widget-area{
+                    .widget{
+                        list-style: none;
+                    }
+                    .textwidget{
+                        p{
+                            margin-bottom: 0;
+                        }
+                        margin-bottom: 5px;
+                    }
+                }
+                a{
+                    color: white;
+                    transition: all .3s;
+                    &:hover{
+                        color: #c1272c;
+                    }
+                }
+                span{
+                    color: white;
+                    margin: 0 2px;
+                }
+            }
+            .cont-correos{
+                margin-top: 25px;
+            }
+        }
+        .contenedor-menu{
+            display: flex;
+            align-items: center;
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li{
+                    a{
+                        color: white;
+                        font-size: 13px;
+                        transition: all .3s;
+                        &:hover{
+                            color: #c1272c;
+                        }
+                    }
+                }
+            }
+        }
+        .contenedor-redes{
+            display: flex;
+            .widget-area{
+                #bfc_widget-3{
+                    list-style: none;
+                    display: flex;
+                }
+            }
+            a{
+                margin: 0 7px;
+                img{
+                    width: 24px;
+                    height: auto;
+                    filter: brightness(0) invert(1);
+                    transition: all .3s;
+                }
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                &:hover{
+                    img{
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
+}

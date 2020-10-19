@@ -1,0 +1,124 @@
+footer {
+  padding: 45px 0;
+  background: #1f1f1f;
+}
+
+footer .contenedor-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contenedor-footer .contenedor-logo img {
+  width: 180px;
+}
+
+footer .contenedor-footer .contenedor-contacto p {
+  color: white;
+}
+
+footer .contenedor-footer .contenedor-contacto p.enc {
+  color: #c1272c;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+footer .contenedor-footer .contenedor-contacto .cont-telefonos a {
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer .contenedor-footer .contenedor-contacto .cont-telefonos a:hover {
+  color: #c1272c;
+}
+
+footer .contenedor-footer .contenedor-contacto .cont-telefonos span {
+  color: white;
+  margin: 0 2px;
+}
+
+footer .contenedor-footer .contenedor-contacto .cont-correos {
+  margin-top: 25px;
+}
+
+footer .contenedor-footer .contenedor-contacto .cont-correos a {
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer .contenedor-footer .contenedor-contacto .cont-correos a:hover {
+  color: #c1272c;
+}
+
+footer .contenedor-footer .contenedor-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contenedor-footer .contenedor-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .contenedor-footer .contenedor-menu ul li a {
+  color: white;
+  font-size: 13px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer .contenedor-footer .contenedor-menu ul li a:hover {
+  color: #c1272c;
+}
+
+footer .contenedor-footer .contenedor-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contenedor-footer .contenedor-redes .widget-area #bfc_widget-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contenedor-footer .contenedor-redes a {
+  margin: 0 7px;
+}
+
+footer .contenedor-footer .contenedor-redes a img {
+  width: 24px;
+  height: auto;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer .contenedor-footer .contenedor-redes a:first-child {
+  margin-left: 0;
+}
+
+footer .contenedor-footer .contenedor-redes a:last-child {
+  margin-right: 0;
+}
+
+footer .contenedor-footer .contenedor-redes a:hover img {
+  -webkit-filter: none;
+          filter: none;
+}
