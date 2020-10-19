@@ -720,6 +720,37 @@ svg {
                         img {
                             width: 7px;
                         }
+                        &.contenedor-yucatan{
+                            right: 5.5%;
+                            bottom: 33%;
+                        }
+                        &.contenedor-campeche{
+                            right: 13%;
+                            bottom: 24%;
+                        }
+                        &.contenedor-tabasco{
+                            right: 18.5%;
+                            bottom: 22%;
+                        }
+                        &.contenedor-tabasco2{
+                            right: 16%;
+                            bottom: 19.5%;
+                        }
+                        &.contenedor-monterrey{
+                            right: 39%;
+                            bottom: 59%;
+                        }
+    
+                        &.active{
+                            img{
+                                width: 15px;
+                            }
+                            &.contenedor-yucatan{
+                                p{
+                                    left: -120px;
+                                }
+                            }
+                        }
                     }
                 }
             }
