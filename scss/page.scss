@@ -629,6 +629,7 @@ header{
 
 .contenedor-general-contacto{
     display: flex;
+    align-items: center;
     margin: 20px 0 60px;
     .contenedor-direccion{
         width: 35%;
@@ -696,7 +697,7 @@ header{
                             outline: none;
                             font-weight: 100;
                             &.wpcf7-not-valid{
-                                border-bottom: 1px solid red;
+                                border: 1px solid red;
                             }
                             &[type="submit"] {
                                 font-size: 14px;

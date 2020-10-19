@@ -74,6 +74,10 @@ $text_color = get_field('text_color');
         </div>
     </div>
     <div class="contenedor-contacto">
+
+        <?php echo do_shortcode('[contact-form-7 id="252" title="Contacto"]'); ?>
+
+<!--
         <div class="form">
             <h2>CONTÁCTANOS</h2>
 
@@ -101,5 +105,6 @@ $text_color = get_field('text_color');
                 <input type="submit" value="Enviar">
             </div>
         </div>
+-->
     </div>
 </div>
