@@ -667,6 +667,7 @@ hr {
   .cont-contenido {
     width: 82%;
     margin: 0 auto;
+    max-width: 1280px;
   }
   .cont-contenido .cont-enc {
     text-align: center;
@@ -677,6 +678,7 @@ hr {
   .cont-contenido-page {
     width: 82%;
     margin: 0 auto;
+    max-width: 1280px;
   }
   .cont-contenido-page > p {
     width: 76%;

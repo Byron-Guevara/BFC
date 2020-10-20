@@ -246,6 +246,20 @@
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
+  .contenedor-carruselcontenido .sliderContenido .owl-dots button span {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #008bab;
+  }
+  .contenedor-carruselcontenido .sliderContenido .owl-dots button:hover span {
+    background: #008bab;
+  }
+  .contenedor-carruselcontenido .sliderContenido .owl-dots button.active span {
+    background: #008bab;
+  }
   .contenedor-servicios-mercados {
     margin: 20px 0;
   }
@@ -1123,6 +1137,20 @@
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
+  .contenedor-carruselcontenido .sliderContenido .owl-dots button span {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #008bab;
+  }
+  .contenedor-carruselcontenido .sliderContenido .owl-dots button:hover span {
+    background: #008bab;
+  }
+  .contenedor-carruselcontenido .sliderContenido .owl-dots button.active span {
+    background: #008bab;
+  }
   .contenedor-servicios-mercados {
     margin: 20px 0;
   }
@@ -1729,6 +1757,12 @@
   }
   .contenedor-general-contacto .contenedor-contacto .form .form-control:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .contenedor-general-page .cont-servicios-casos .cont-item .mask .info p.title {
+    display: none;
   }
 }
 

@@ -214,6 +214,28 @@
                     }
                 }
             }
+            .owl-dots{
+                button{
+                    span{
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 3px;
+                        border-radius: 100%;
+                        background: transparent;
+                        border: 1px solid #008bab;
+                    }
+                    &:hover{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                    &.active{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1009,6 +1031,28 @@
                     }
                 }
             }
+            .owl-dots{
+                button{
+                    span{
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 3px;
+                        border-radius: 100%;
+                        background: transparent;
+                        border: 1px solid #008bab;
+                    }
+                    &:hover{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                    &.active{
+                        span{
+                            background: #008bab;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1576,6 +1620,27 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 1279px) {
+
+    .contenedor-general-page {
+        .cont-servicios-casos {
+            .cont-item {
+                .mask {
+                    .info {
+                        p {
+                            &.title {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 

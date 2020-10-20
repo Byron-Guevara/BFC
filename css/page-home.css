@@ -329,6 +329,7 @@
   width: 100%;
   border-radius: 10px;
   margin: 0 5px;
+  background: #002a5b;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -761,6 +762,12 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
 @media screen and (min-width: 768px) {
   .contenedor-general-principal .sliderPrincipal .item {
     background-image: unset !important;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .contenedor-servicios-casos.contenedor-general-casos .cont-servicios-casos .cont-item .mask .info p.title {
+    display: none;
   }
 }
 
