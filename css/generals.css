@@ -103,12 +103,11 @@
   header .contenedor-header .mobile-cont-menu {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.95);
-    mix-blend-mode: color-dodge;
     top: 0;
     left: -100%;
     width: 100%;
     min-height: 100vh;
-    z-index: 100;
+    z-index: -1;
     padding-top: 90px;
     padding-bottom: 150px;
     -webkit-transition: left 400ms ease;
@@ -119,6 +118,7 @@
   }
   header .contenedor-header .mobile-cont-menu .contenedor-menu {
     display: block;
+    margin-top: 30px;
   }
   header .contenedor-header .mobile-cont-menu .contenedor-menu .cont-languaje {
     padding: 10px;

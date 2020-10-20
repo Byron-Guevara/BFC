@@ -27,9 +27,11 @@
             <!-- Mobile -->
             <div class="mobile-cont-menu">
                 <div class="contenedor-menu">
+                <!--
                     <div class="cont-languaje">
                         <a href="#"><span class="active">ES</span></a><span class="divider">|</span><a href="#"><span>EN</span></a>
                     </div>
+                -->
 
                     <?php
                     wp_nav_menu(
@@ -51,10 +53,11 @@
                         )
                     );
                 ?>
-
+            <!--
                 <div class="cont-languaje">
                     <a href="#"><span class="active">ES</span></a><span class="divider">|</span><a href="#"><span>EN</span></a>
                 </div>
+            -->
             </div>
         </div>
     </header>

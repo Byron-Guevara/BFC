@@ -59,12 +59,11 @@
             .mobile-cont-menu {
                 position: absolute;
                 background-color: rgba(black, 0.95);
-                mix-blend-mode: color-dodge;
                 top: 0;
                 left: -100%;
                 width: 100%;
                 min-height: 100vh;
-                z-index: 100;
+                z-index: -1;
                 padding-top: 90px;
                 padding-bottom: 150px;
                 transition: left 400ms ease;
@@ -73,6 +72,7 @@
                 }
                 .contenedor-menu {
                     display: block;
+                    margin-top: 30px;
                     .cont-languaje {
                         padding: 10px;
                         margin: 0 auto;
