@@ -538,8 +538,10 @@
 }
 
 .contenedor-general-clientes .cont-clientes .cont-cliente img {
-  height: 57px;
+  max-width: 75%;
   width: auto;
+  max-height: 65px;
+  height: auto;
 }
 
 @-webkit-keyframes map_point {
@@ -810,10 +812,6 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
   }
   .contenedor-general-clientes .cont-clientes .cont-cliente {
     width: calc(100% / 2);
-  }
-  .contenedor-general-clientes .cont-clientes .cont-cliente img {
-    height: 40px;
-    width: auto;
   }
   .contenedor-general-mapa .map-container {
     padding: 50px 0px;

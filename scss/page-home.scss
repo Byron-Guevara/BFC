@@ -434,8 +434,12 @@
             width: calc(100% / 4);
             margin-top: 30px;
             img {
-                height: 57px;
-                width: auto;
+                //height: 57px;
+                //width: auto;
+                    max-width: 75%;
+                    width: auto;
+                    max-height: 65px;
+                    height: auto;
             }
         }
     }
@@ -727,8 +731,8 @@ svg {
             .cont-cliente {
                 width: calc(100% / 2);
                 img {
-                    height: 40px;
-                    width: auto;
+                    //height: 40px;
+                    //width: auto;
                 }
             }
         }

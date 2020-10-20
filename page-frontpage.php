@@ -23,6 +23,7 @@
                 </div>
             </div>
         </div>
+<!--
         <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>);">
             <div class="overlay"></div>
             <img src="<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>" alt="">
@@ -38,6 +39,7 @@
                 </div>
             </div>
         </div>
+-->
     </div>
 </div>
 
@@ -243,28 +245,100 @@
 
         <div class="cont-clientes">
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c1.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c1.jpg';?>" alt="">
             </div>
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c2.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c2.jpg';?>" alt="">
             </div>
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c3.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c3.jpg';?>" alt="">
             </div>
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c4.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c4.jpg';?>" alt="">
             </div>
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c5.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c5.jpg';?>" alt="">
             </div>
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c6.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c6.jpg';?>" alt="">
             </div>
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c7.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c7.jpg';?>" alt="">
             </div>
             <div class="cont-cliente">
-                <img src="<?php echo get_template_directory_uri().'/img/c8.png';?>" alt="">
+                <img src="<?php echo get_template_directory_uri().'/img/c8.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c9.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c10.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c11.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c12.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c13.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c14.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c15.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c16.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c17.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c18.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c19.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c20.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c21.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c22.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c23.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c24.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c25.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c26.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c27.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c28.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c29.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c30.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c31.jpg';?>" alt="">
+            </div>
+            <div class="cont-cliente">
+                <img src="<?php echo get_template_directory_uri().'/img/c32.jpg';?>" alt="">
             </div>
         </div>
     </div>
@@ -390,7 +464,7 @@ $('.sliderServicios').owlCarousel({
     nav: true,
     stagePadding: 50,
     items: 3,
-    navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
+    navText: ["<img src='<?php echo get_template_directory_uri().'/img/flecha-Izq.png';?>'>", "<img src='<?php echo get_template_directory_uri().'/img/flecha-Der.png';?>'>"],
     responsive: {
         0: {
             items: 1,
@@ -413,7 +487,7 @@ $('.sliderMercados').owlCarousel({
     nav: true,
     stagePadding: 50,
     items: 5,
-    navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
+    navText: ["<img src='<?php echo get_template_directory_uri().'/img/flecha-Izq.png';?>'>", "<img src='<?php echo get_template_directory_uri().'/img/flecha-Der.png';?>'>"],
     responsive: {
         0: {
             items: 1,
@@ -440,7 +514,7 @@ $('.sliderCasos').owlCarousel({
     nav: true,
     stagePadding: 50,
     items: 3,
-    navText: ["<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Izq.png'>", "<img src='http://localhost:8888/bfc/wp-content/themes/bfc/img/flecha-Der.png'>"],
+    navText: ["<img src='<?php echo get_template_directory_uri().'/img/flecha-Izq.png';?>'>", "<img src='<?php echo get_template_directory_uri().'/img/flecha-Der.png';?>'>"],
     responsive: {
         0: {
             items: 1,
