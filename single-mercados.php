@@ -24,7 +24,7 @@
                 $thumbID = get_post_thumbnail_id( $post->ID );
 				$imgDestacada = wp_get_attachment_url( $thumbID );
                 ?>
-                    <a href="<?php the_permalink(); ?>" class="cont-servicios-mercados" style="background-image: url(<?php echo $imgDestacada; ?>);">
+                    <a href="<?php the_permalink(); ?>" class="cont-servicios-mercados" style="background-image: url(<?php the_field('imagen_carrusel'); ?>);">
                         <div class="mask-info">
                             <p>
                                 <?php the_title(); ?>

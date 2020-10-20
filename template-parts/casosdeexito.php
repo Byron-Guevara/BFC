@@ -6,7 +6,7 @@
         $thumbID = get_post_thumbnail_id( $post->ID );
         $imgDestacada = wp_get_attachment_url( $thumbID );
     ?>
-    <div class="cont-item" style="background-image: url(<?php echo $imgDestacada; ?>);">
+    <div class="cont-item" style="background-image: url(<?php the_field('imagen_carrusel'); ?>);">
         <div class="cont-size">
             <img src="<?php echo get_template_directory_uri().'/img/servicio-size.jpg';?>" alt="">
         </div>
