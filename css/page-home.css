@@ -18,7 +18,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 139, 171, 0.7);
+  background-color: rgba(0, 139, 171, 0.4);
   mix-blend-mode: multiply;
 }
 
@@ -65,7 +65,7 @@
 .contenedor-general-principal .sliderPrincipal .owl-dots {
   position: absolute;
   width: 100%;
-  bottom: 15px;
+  bottom: 45px;
 }
 
 .contenedor-general-principal .sliderPrincipal .owl-dots button span {
@@ -795,8 +795,8 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
     max-width: 1000px;
   }
   .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info h1 {
-    font-size: 92px;
-    line-height: 92px;
+    font-size: 86px;
+    line-height: 86px;
   }
   .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info p {
     font-size: 26px;

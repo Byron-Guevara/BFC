@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     $('.sliderServicios').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 10,
         nav: true,
         dots: false,
@@ -26,7 +26,7 @@ $(document).ready(function () {
     });
 
     $('.sliderContenido').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 10,
         dots: false,
         stagePadding: 2,
@@ -53,7 +53,7 @@ $(document).ready(function () {
     });
 
     $('.slider-servicios-mercados').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 6,
         nav: true,
         dots: false,
@@ -81,7 +81,7 @@ $(document).ready(function () {
     });
 
     $('.sliderCasos').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 10,
         nav: true,
         dots: true,

@@ -253,14 +253,11 @@
 <div class="contenedor-general-clientes">
     <div class="cont-contenido">
         <div class="cont-enc">
-            <h1>NUESTROS CLIENTES</h1>
+            <h1>NUESTROS PRINCIPALES CLIENTES</h1>
             <p>
-                Más de 30 clientes han depositado su confianza en BFC Consulting, porque desde el 2005
+                Más de 87 clientes han depositado su confianza en BFC Consulting, porque desde el 2005
                 hemos atendido las necesidades de diversas industrias combinando conocimientos,
                 experiencia, herramientas y técnicas especializadas.
-            </p>
-            <p>
-                Algunos de nuestros depositarios de confianza son:
             </p>
         </div>
 
@@ -468,6 +465,7 @@
 
 <script>
 $(".sliderPrincipal").owlCarousel({
+    loop: true,
     items: 1,
     navigation: false,
     dots: true,
@@ -478,7 +476,7 @@ $(".sliderPrincipal").owlCarousel({
     autoplayTimeout: 6000,
 });
 $('.sliderServicios').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 10,
     nav: true,
     dots: true,
@@ -501,7 +499,7 @@ $('.sliderServicios').owlCarousel({
     },
 });
 $('.sliderMercados').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 10,
     nav: true,
     dots: true,
@@ -528,7 +526,7 @@ $('.sliderMercados').owlCarousel({
 });
 
 $('.sliderCasos').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 10,
     nav: true,
     dots: true,

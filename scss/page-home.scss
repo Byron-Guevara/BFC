@@ -13,7 +13,7 @@
                 width: 100%;
                 height: 100%;
                 //background-color: rgba(0, 42, 91, 0.15);
-                background-color: rgba(#008bab, 0.7);
+                background-color: rgba(#008bab, 0.4);
                 mix-blend-mode: multiply;
             }
             img {
@@ -50,7 +50,7 @@
         .owl-dots {
             position: absolute;
             width: 100%;
-            bottom: 15px;
+            bottom: 45px;
             button {
                 span {
                     width: 8px;
@@ -695,8 +695,8 @@ svg {
                     .cont-info {
                         max-width: 1000px;
                         h1 {
-                            font-size: 92px;
-                            line-height: 92px;
+                            font-size: 86px;
+                            line-height: 86px;
                         }
                         p {
                             font-size: 26px;
