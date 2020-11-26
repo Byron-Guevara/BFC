@@ -8,9 +8,29 @@
 
 <div class="contenedor-general-principal">
     <div class="sliderPrincipal owl-carousel owl-theme">
-        <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>);">
+
+    <?php if(have_rows('slider_principal')): ?>
+        <?php while(have_rows('slider_principal')): the_row(); 
+            $imagen = get_sub_field('imagen');
+            $informacion = get_sub_field('informacion');
+        ?>
+
+        <div class="item" style="background-image: url(<?php the_sub_field('imagen'); ?>);">
             <div class="overlay"></div>
-            <img src="<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>" alt="">
+            <img src="<?php the_sub_field('imagen'); ?>" alt="">
+            <div class="contenedor-info cont-contenido">
+                <div class="cont-info">
+                    <?php the_sub_field('informacion'); ?>
+                </div>
+            </div>
+        </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
+
+    <!--
+        <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide1.jpg';?>);">
+            <div class="overlay"></div>
+            <img src="<?php echo get_template_directory_uri().'/img/slide1.jpg';?>" alt="">
             <div class="contenedor-info cont-contenido">
                 <div class="cont-info">
                     <h1>
@@ -23,23 +43,24 @@
                 </div>
             </div>
         </div>
-<!--
-        <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>);">
+
+        <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide1.jpg';?>);">
             <div class="overlay"></div>
-            <img src="<?php echo get_template_directory_uri().'/img/bg-principal.jpg';?>" alt="">
+            <img src="<?php echo get_template_directory_uri().'/img/slide1.jpg';?>" alt="">
             <div class="contenedor-info cont-contenido">
                 <div class="cont-info">
                     <h1>
                         NUESTRO éxito: <br>
-                        <span>la experiencia2</span>
+                        <span>la experiencia</span>
                     </h1>
                     <p>
-                        Contamos con más de 15 años de experiencia <br> ejecutando proyectos en Seguridad Funcional <br> e Ingeniería de Riesgos de Proceso.
+                        Contamos con más de 15 años de experiencia ejecutando proyectos en Seguridad Funcional e Ingeniería de Riesgos de Proceso.
                     </p>
                 </div>
             </div>
         </div>
--->
+    -->
+
     </div>
 </div>
 

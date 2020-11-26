@@ -183,7 +183,7 @@
             padding: 0 50px;
             .contenedor-logo {
                 img {
-                    width: 153px;
+                    width: 210px;
                 }
             }
             .mobile-cont-menu {
@@ -191,7 +191,9 @@
             }
             .contenedor-menu {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
+                justify-content: flex-end;
                 ul {
                     display: flex;
                     padding: 0;
@@ -203,6 +205,9 @@
                         position: relative;
                         border-bottom: 2px solid transparent;
                         transition: all 0.3s;
+                        &:last-child{
+                            margin-right: 0;
+                        }
                         a {
                             color: white;
                             text-transform: uppercase;
@@ -268,8 +273,11 @@
                     margin-left: 70px;
                     color: white;
                     font-size: 12px;
+                    display: flex;
+                    align-items: center;
                     a {
                         color: white;
+                        transition: all .3s;
                         span {
                             &.active {
                                 font-weight: bold;
@@ -279,9 +287,75 @@
                             margin: 0 2px;
                             margin-top: -2px;
                         }
+                        &:hover{
+                            opacity: .7;
+                        }
                     }
                 }
             }
         }
     }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+
+    header {
+        .contenedor-header {
+            .contenedor-menu {
+                ul {
+                    li {
+                        a {
+                            font-size: 16px;
+                        }
+                        ul.sub-menu {
+                            width: 200px;
+                            li {
+                                line-height: 16px;
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1700px) {
+
+
+    header {
+        .contenedor-header {
+            .contenedor-logo {
+                img {
+                    width: 275px;
+                }
+            }
+            .contenedor-menu {
+                ul {
+                    li {
+                        a {
+                            font-size: 18px;
+                        }
+                        ul.sub-menu {
+                            width: 240px;
+                            li {
+                                line-height: 18px;
+                                a {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

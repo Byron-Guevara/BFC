@@ -22,4 +22,12 @@ $(document).ready(function () {
         e.preventDefault();
         return false;
     });
+
+    $(".contenedor-menu ul li.descarga").each(function(){
+        var name = $(this).children("a").text();
+        $(this).children("a").attr("download", name);
+    });
+
+
+
 });

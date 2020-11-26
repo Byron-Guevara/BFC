@@ -33,11 +33,22 @@
     width: 86%;
   }
   .contenedor-general-banner .contenedor-info h1 {
-    color: #008bab;
+    color: white;
     margin: 0;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 26px;
+    position: relative;
+    display: inline;
+  }
+  .contenedor-general-banner .contenedor-info h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #c1272c;
   }
   .contenedor-general-banner .contenedor-info h2 {
     font-size: 28px;
@@ -46,6 +57,7 @@
     color: white;
     margin: 0;
     text-transform: uppercase;
+    margin-top: 10px;
   }
   .contenedor-general-banner .contenedor-info.caso-exito h1 {
     margin-bottom: 10px;
@@ -920,11 +932,22 @@
     width: 63%;
   }
   .contenedor-general-banner .contenedor-info h1 {
-    color: #008bab;
+    color: white;
     margin: 0;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 26px;
+    position: relative;
+    display: inline;
+  }
+  .contenedor-general-banner .contenedor-info h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #c1272c;
   }
   .contenedor-general-banner .contenedor-info h2 {
     font-size: 48px;
@@ -933,13 +956,15 @@
     color: white;
     margin: 0;
     text-transform: uppercase;
+    margin-top: 10px;
+    width: 100%;
   }
   .contenedor-general-banner .contenedor-info.caso-exito h1 {
     margin-bottom: 10px;
   }
   .contenedor-general-banner .contenedor-info.caso-exito h2 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 23px;
+    line-height: 29px;
     letter-spacing: 1px;
   }
   .contenedor-general-page {
@@ -1666,6 +1691,7 @@
     font-size: 14px;
   }
   .contenedor-general-contacto .contenedor-direccion .cont-direccion .contenedor-info .cont-info a {
+    font-size: 13px;
     display: block;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -1758,6 +1784,76 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contenedor-general-banner .contenedor-info.caso-exito h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .contenedor-carruselcontenido .sliderContenido .cont-carruselcontenido p {
+    font-size: 14px;
+  }
+  .contenedor-carruselcontenido .sliderContenido .cont-carruselcontenido p.title {
+    font-size: 18px;
+  }
+  .contenedor-general-contacto .contenedor-direccion .cont-direccion .contenedor-info .cont-info p {
+    font-size: 16px;
+  }
+  .contenedor-general-contacto .contenedor-direccion .cont-direccion .contenedor-info .cont-info p.title {
+    font-size: 16px;
+  }
+  .contenedor-general-contacto .contenedor-direccion .cont-direccion .contenedor-info .cont-info a {
+    font-size: 16px;
+  }
+  .contenedor-general-contacto .contenedor-contacto .form .form-control label {
+    font-size: 16px;
+  }
+  .contenedor-general-contacto .contenedor-contacto .form .form-control input {
+    font-size: 16px;
+  }
+  .contenedor-general-contacto .contenedor-contacto .form .form-control input[type="submit"] {
+    font-size: 16px;
+  }
+  .contenedor-general-contacto .contenedor-contacto .form .form-control textarea {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .contenedor-carruselcontenido .sliderContenido .cont-carruselcontenido p {
+    font-size: 16px;
+  }
+  .contenedor-carruselcontenido .sliderContenido .cont-carruselcontenido p.title {
+    font-size: 20px;
+  }
+  .contenedor-servicios-mercados .slider-servicios-mercados .cont-servicios-mercados .mask-info p {
+    font-size: 16px;
+  }
+  .contenedor-general-page .cont-servicios-casos .cont-item .cont-tit p {
+    font-size: 19px;
+  }
+  .contenedor-general-page .cont-servicios-casos .cont-item .mask .info p {
+    font-size: 15px;
+  }
+  .contenedor-general-page .cont-servicios-casos .cont-item .mask .info p.title {
+    font-size: 18px;
+  }
+  .contenedor-general-page .cont-servicios-casos .cont-item .mask .info a {
+    font-size: 15px;
+  }
+  .contenedor-general-banner .contenedor-info h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .contenedor-general-banner .contenedor-info h2 {
+    font-size: 52px;
+    line-height: 54px;
+  }
+  .contenedor-general-banner .contenedor-info.caso-exito h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .contenedor-general-page .cont-servicios-casos .cont-item .mask .info p.title {
     display: none;
@@ -1765,6 +1861,13 @@
 }
 
 @media screen and (max-width: 767px) {
+  .contenedor-general-banner .contenedor-info.caso-exito h1 {
+    font-size: 22px;
+  }
+  .contenedor-general-banner .contenedor-info.caso-exito h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
   .contenedor-general-capas .contenedor-items-capas .cont-item-capa {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;

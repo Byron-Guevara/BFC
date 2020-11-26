@@ -28,7 +28,7 @@
 
 .contenedor-general-principal .sliderPrincipal .item .contenedor-info {
   position: absolute;
-  height: calc(100% - 105px);
+  height: calc(100% - 130px);
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,14 +48,18 @@
   font-size: 65px;
   line-height: 65px;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
-.contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info h1 span {
+.contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info h1 em {
   color: #008bab;
+  font-style: normal;
 }
 
 .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info p {
+  margin-top: 15px;
   color: white;
+  font-size: 16px;
 }
 
 .contenedor-general-principal .sliderPrincipal .owl-dots {
@@ -519,7 +523,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -767,6 +771,66 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info {
+    max-width: 800px;
+  }
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info h1 {
+    font-size: 78px;
+    line-height: 78px;
+  }
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info p {
+    font-size: 21px;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.active.contenedor-campeche p {
+    top: -49px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info {
+    height: calc(100% - 160px);
+  }
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info {
+    max-width: 1000px;
+  }
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info h1 {
+    font-size: 92px;
+    line-height: 92px;
+  }
+  .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info p {
+    font-size: 26px;
+  }
+  .contenedor-servicios-casos .cont-servicios-casos .cont-item .cont-tit p {
+    font-size: 19px;
+  }
+  .contenedor-servicios-casos .cont-servicios-casos .cont-item .mask .info p {
+    font-size: 15px;
+  }
+  .contenedor-servicios-casos .cont-servicios-casos .cont-item .mask .info p.title {
+    font-size: 18px;
+  }
+  .contenedor-servicios-casos .cont-servicios-casos .cont-item .mask .info a {
+    font-size: 15px;
+  }
+  .contenedor-general-mercados .cont-mercados .cont-mercado .mask .info p {
+    font-size: 13px;
+  }
+  .contenedor-general-mercados .cont-mercados .cont-mercado .mask .info p.title {
+    font-size: 13.5px;
+  }
+  .contenedor-general-mercados .cont-mercados .cont-mercado .mask .info a {
+    font-size: 13px;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item p {
+    width: 215px;
+    top: -35px;
+  }
+  .contenedor-general-mapa .map-container .cont-contenido .contenedor-mapa .contenedor-item.active.contenedor-campeche p {
+    top: -53px;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .contenedor-servicios-casos.contenedor-general-casos .cont-servicios-casos .cont-item .mask .info p.title {
     display: none;
@@ -791,8 +855,8 @@ svg g.active #MX-NEL, svg g.active #MX-TAB, svg g.active #MX-CAM, svg g.active #
     padding: 0;
   }
   .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info h1 {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 26px;
+    line-height: 26px;
   }
   .contenedor-general-principal .sliderPrincipal .item .contenedor-info .cont-info p br {
     display: none;

@@ -12,6 +12,7 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                //background-color: rgba(0, 42, 91, 0.15);
                 background-color: rgba(#008bab, 0.7);
                 mix-blend-mode: multiply;
             }
@@ -20,7 +21,7 @@
             }
             .contenedor-info {
                 position: absolute;
-                height: calc(100% - 105px);
+                height: calc(100% - 130px);
                 bottom: 0;
                 display: flex;
                 align-items: center;
@@ -32,12 +33,16 @@
                         font-size: 65px;
                         line-height: 65px;
                         text-transform: uppercase;
-                        span {
+                        margin-bottom: 0;
+                        em {
                             color: #008bab;
+                            font-style: normal;
                         }
                     }
                     p {
+                        margin-top: 15px;
                         color: white;
+                        font-size: 16px;
                     }
                 }
             }
@@ -425,7 +430,7 @@
     .cont-clientes {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        width: 85%;
         margin: 0 auto;
         .cont-cliente {
             display: flex;
@@ -638,6 +643,140 @@ svg {
     }
 }
 
+@media screen and (min-width: 1280px) {
+
+    .contenedor-general-principal {
+        .sliderPrincipal {
+            .item {
+                .contenedor-info {
+                    .cont-info {
+                        max-width: 800px;
+                        h1 {
+                            font-size: 78px;
+                            line-height: 78px;
+                        }
+                        p {
+                            font-size: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-general-mapa{ 
+        .map-container{ 
+            .cont-contenido{ 
+                .contenedor-mapa{ 
+                    .contenedor-item{
+                        &.active{
+                            &.contenedor-campeche{
+                                p{
+                                    top: -49px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1700px) {
+
+    .contenedor-general-principal {
+        .sliderPrincipal {
+            .item {
+                .contenedor-info {
+                    height: calc(100% - 160px);
+                    .cont-info {
+                        max-width: 1000px;
+                        h1 {
+                            font-size: 92px;
+                            line-height: 92px;
+                        }
+                        p {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-servicios-casos {
+        .cont-servicios-casos {
+            .cont-item {
+                .cont-tit {
+                    p {
+                        font-size: 19px;
+                    }
+                }
+                .mask {
+                    .info {
+                        p {
+                            font-size: 15px;
+                            &.title {
+                                font-size: 18px;
+                            }
+                        }
+                        a {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .contenedor-general-mercados {
+        .cont-mercados {
+            .cont-mercado {
+                .mask {
+                    .info {
+                        p {
+                            font-size: 13px;
+                            &.title {
+                                font-size: 13.5px;
+                            }
+                        }
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-general-mapa{ 
+        .map-container{ 
+            .cont-contenido{ 
+                .contenedor-mapa{ 
+                    .contenedor-item{
+                        p{
+                            width: 215px;
+                            top: -35px;
+                        }
+                        &.active{
+                            &.contenedor-campeche{
+                                p{
+                                    top: -53px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 
 @media screen and (max-width: 1279px) {
 
@@ -690,8 +829,8 @@ svg {
                     padding: 0;
                     .cont-info {
                         h1 {
-                            font-size: 35px;
-                            line-height: 35px;
+                            font-size: 26px;
+                            line-height: 26px;
                         }
                         p {
                             br {
