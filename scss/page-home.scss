@@ -429,6 +429,7 @@
     }
     .cont-clientes {
         display: flex;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         width: 85%;
         margin: 0 auto;

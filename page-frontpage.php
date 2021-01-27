@@ -4,7 +4,9 @@
 *
 */
 ?>
-<?php get_header(); ?>
+<?php get_header(); 
+$ID = get_the_ID();
+?>
 
 <div class="contenedor-general-principal">
     <div class="sliderPrincipal owl-carousel owl-theme">
@@ -71,8 +73,7 @@
             <div class="cont-enc">
                 <h1>SERVICIOS</h1>
                 <p>
-                    Ofrecemos una gran variedad de servicios técnicos especializados en Seguridad
-                    Funcional e Ingeniería de Riesgos de la más alta calidad.
+                    <?php the_field('servicios_descripcion', $ID); ?>
                 </p>
             </div>
             <div class="sliderServicios cont-servicios-casos owl-carousel owl-theme">
@@ -160,8 +161,7 @@
             <div class="cont-enc">
                 <h1>MERCADOS</h1>
                 <p>
-                    Gracias a nuestra extensa experiencia en el mercado, podemos brindar servicios especializados a
-                    una amplia gama de industrias, atendiendo sus necesidades al ofrecerles soluciones integrales.
+                    <?php the_field('mercados_descripcion', $ID); ?>
                 </p>
             </div>
 
@@ -235,8 +235,7 @@
             <div class="cont-enc">
                 <h1>CASOS DE ÉXITO</h1>
                 <p>
-                    Nos distinguimos por ofrecer calidad e innovación, cumpliendo con los requisitos y normativa
-                    que rigen las operaciones de nuestros clientes y nuestra empresa. Algunos de los trabajos que hemos realizado son:
+                    <?php the_field('casos_de_exito_descripcion', $ID); ?>
                 </p>
             </div>
 
@@ -255,13 +254,24 @@
         <div class="cont-enc">
             <h1>NUESTROS PRINCIPALES CLIENTES</h1>
             <p>
-                Más de 87 clientes han depositado su confianza en BFC Consulting, porque desde el 2005
-                hemos atendido las necesidades de diversas industrias combinando conocimientos,
-                experiencia, herramientas y técnicas especializadas.
+                <?php the_field('clientes_descripcion', $ID); ?>
             </p>
         </div>
 
         <div class="cont-clientes">
+
+            <?php if( have_rows('clientes', $ID) ): ?>
+                <?php while( have_rows('clientes', $ID) ): the_row();
+                    $logo = get_sub_field('logo');
+                ?>
+
+                <div class="cont-cliente">
+                    <img src="<?php echo $logo; ?>" alt="">
+                </div>
+
+                <?php endwhile; ?>
+            <?php endif; ?>
+        <!--
             <div class="cont-cliente">
                 <img src="<?php echo get_template_directory_uri().'/img/c1.jpg';?>" alt="">
             </div>
@@ -358,6 +368,7 @@
             <div class="cont-cliente">
                 <img src="<?php echo get_template_directory_uri().'/img/c32.jpg';?>" alt="">
             </div>
+        -->
         </div>
     </div>
 </div>
